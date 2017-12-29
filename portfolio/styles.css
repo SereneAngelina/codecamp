@@ -1,0 +1,196 @@
+body {
+     position: relative;
+ }
+header .banner {
+   background: url("https://blog.alexdevero.com/wp-content/uploads/2016/05/Web-Design-and-Maslow%E2%80%99s-Hierarchy-of-Needs-small.jpg") 70% no-repeat;
+   background-position: top;
+   background-size: 100%;
+   height: 55%;
+   position: relative;
+   z-index: -10;
+   text-align: center;
+}
+.banner-content {
+   color: #5F5452  ;
+   font-family: "Lato", serif;
+   text-align: center;
+   text-transform: uppercase;
+   margin-top: 10%;
+   letter-spacing: 0.1rem;
+}
+.banner-content h1 {
+   font-size: 5rem;
+   font-weight: bold;
+}
+.banner-content h2 {
+   font-size: 3rem;
+   margin: 4% 0;
+   color: #001;
+   font-weight: bold;
+}
+.img-size {
+ height: 200px;
+ width: 200px;
+}
+/*about*/
+.about-content {
+   margin-top: 3.5%;
+   font-family: "Lato", serif;
+}
+.about-text {
+   font-size: 2rem;
+   line-height: 2;
+   margin: 3.5% 0%;
+}
+/*about end*/
+/*skills start*/
+.devicons {
+ font-size :12rem;
+ margin: 4%;
+}
+.devicons-html5 {
+ color: #e34f26
+}
+.devicons-css3{
+ color: #0b73b8;
+}
+.devicons-javascript_badge{
+ color: #f7df1e;
+}
+.devicons-ruby {
+ color: #cc342d;
+}
+.devicons-ruby_on_rails {
+ color: #cc0000;
+}
+.devicons-react {
+ color: #00d8ff;
+}
+.devicons-dotnet {
+ color: blue;
+}
+.devicons-msql_server {
+ color: red;
+}
+.devicons-postgresql{
+ color: blue;
+}
+.devicons-mongodb {
+ color: #589636;
+}
+.skills h2 {
+   text-align: center;
+   font-size: 4rem;
+   margin: 4% 0;
+  font-family: "Lato", serif;
+}
+/*skills end*/
+
+/*projects*/
+.projects h2 {
+   text-align: center;
+   font-size: 4rem;
+   margin: 4% 0;
+  font-family: "Lato", serif;
+}
+.block {
+   box-shadow: 4px 4px 7px #333;
+   overflow: hidden;
+   position: relative;
+   margin-bottom: 10%;
+}
+.projects {
+   padding-bottom: 3%;
+   background: #fff;
+}
+.projects-thumb {
+   height: 300px;
+}
+#project-1 {
+   background: url("http://res.cloudinary.com/dvmfuraf4/image/upload/v1509536181/parking_garages_vggw5e.png") no-repeat 100%;
+   background-size: cover;
+}
+#project-2 {
+   background: url("http://res.cloudinary.com/dvmfuraf4/image/upload/v1509193777/Codaisseurify_screen_z4yyfm.png") no-repeat 100%;
+   background-size: cover;
+}
+#project-3 {
+   background: url("http://res.cloudinary.com/dvmfuraf4/image/upload/v1509545761/studypairs_admin_ck3mi1.png") no-repeat 100%;
+   background-size: cover;
+}
+#project-4 {
+   background: url("http://res.cloudinary.com/dvmfuraf4/image/upload/v1509304482/StudentEvaluation_of2vg8.png") no-repeat 100%;
+   background-size: cover;
+}
+#project-5 {
+   background: url("http://res.cloudinary.com/dvmfuraf4/image/upload/v1509372890/hangman2_qxtg1a.png") no-repeat 100%;
+   background-size: cover;
+}
+#project-6 {
+   background: url("http://res.cloudinary.com/dvmfuraf4/image/upload/v1514408028/quericocakes_a5i9iw.png") no-repeat 100%;
+   background-size: cover;
+}
+.block::after, .block::before {
+   content: '';
+   background: rgba(0,0,0,0.6);
+   position: absolute;
+   display: block;
+   width: 50%;
+   height: 100%;
+   top: 0;
+   overflow: hidden;
+}
+.block::after {
+   left: -50%;
+   transition: 0.5s;
+}
+.block::before {
+   right: -50%;
+   transition: 0.5s;
+}
+.block:hover:after {
+   left: 0;
+}
+.block:hover:before {
+   right: 0;
+}
+.works-caption {
+   text-align: center;
+   font-family: "Lato", serif;
+   font-size: 2rem;
+   letter-spacing: 0.4rem;
+   position: absolute;
+   border-radius: 10px;
+   display: block;
+   padding: 15px 2px;
+   width: 60%;
+   left: 20%;
+   top:-40%;
+   z-index: 1;
+   color: #fff;
+   border: 2px solid #fff;
+   transition: top 0.5s;
+}
+.block:hover .works-caption {
+   top: 33%;
+}
+.works h2 {
+   margin: 7% 0;
+}
+/*works end*/
+
+footer {
+   background: url("https://vignette.wikia.nocookie.net/planetside2/images/8/8a/SOE_footer_background.png/revision/latest?cb=20131211021226");
+   -webkit-background-size: cover;
+   background-size: cover;
+   color: #fff;
+}
+.contact-detail1
+{
+padding: 10px;
+font-size: 1.5em;
+}
+.detail
+{
+ padding:15px;
+}
