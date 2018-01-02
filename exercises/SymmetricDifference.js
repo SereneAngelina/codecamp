@@ -7,3 +7,29 @@
 // Here are some helpful links:
 //
 // Array.prototype.reduce()
+
+//Answer
+
+
+function sym(args) {
+  args = Array.prototype.slice.call(arguments);
+  // Delete duplicate numbers in subArrays
+  for (var i = 0; i < args.length; i++) {
+    for (var j = 0; j < args[i].length; j++) {
+      if (args[i][j] === args[i][j+1]) {
+        delete args[i][j];
+      }
+    }
+  }
+  // then concat subArrays successively with reduce, filtering duplicates after each iteration
+  return args.reduce(function(a, b) {
+    return a.concat(b).sort().filter(function(value, index, arr) {
+      if (arr[index] != arr[index+1] && arr[index] != arr[index-1]) {
+        return value;
+      }
+    });
+  });
+}
+
+
+sym([1, 2, 3], [5, 2, 1, 4]);
