@@ -12,3 +12,39 @@
 //
 // String.prototype.charCodeAt()
 // String.fromCharCode()
+
+//Answer:
+
+function rot13(str) { // LBH QVQ VG!
+   str2 = [];
+  var count=0;
+  while(count < str.length)
+    {
+      var alpnum = str.charCodeAt(count);
+      if(alpnum >= 65 && alpnum <= 77)
+        {
+          str2.push(String.fromCharCode(alpnum + 13));
+          count++;
+
+        }
+      else if(alpnum >= 78 && alpnum <= 90)
+        {
+          str2.push(String.fromCharCode(alpnum - 13));
+          count++;
+
+        }
+      else
+        {
+          str2.push(str[count]);
+          count++;
+        }
+
+
+    }
+  str2 = str2.join("");
+
+  return str2;
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
