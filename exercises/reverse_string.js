@@ -12,3 +12,14 @@
 // String.prototype.split()
 // Array.prototype.reverse()
 // Array.prototype.join()
+// Answer
+
+function reverseString(str) {
+  var revstr = [];
+
+  revstr = str.split("");
+  var res = revstr.reverse();
+  return res.join("");
+}
+
+reverseString("Howdy");
