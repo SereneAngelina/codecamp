@@ -14,3 +14,21 @@
 //
 // String.prototype.replace()
 // String.prototype.toLowerCase()
+//Answer
+
+
+function palindrome(str) {
+  // Good luck!
+  var result = str.replace(/[^a-z^0-9]/gi,"").toLowerCase();
+
+   var rescheck = result.split("").reverse().join("");
+
+  if(result == rescheck)
+  return true;
+  else
+    return false;
+}
+
+
+
+palindrome("1 eye for of 1 eye.");
