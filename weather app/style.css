@@ -1,0 +1,19 @@
+body
+{
+  text-align: center;
+  background-image: url( "http://allswalls.com/images/cute-backgrounds-wallpaper-5.jpg");
+
+}
+h1
+{
+  color: slateblue;
+}
+span
+{
+  font-size: 1.5em;
+}
+#desc
+{
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
