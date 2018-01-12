@@ -24,15 +24,28 @@ function success(position) {
   $.ajax({
     url: urlString, success: function (result) {
       $("#location").text(result.name + ", " + result.sys.country);
-     $("#temp").text(result.main.temp);
-      $("#desc").text(result.weather[0].description);
+
+     $("#temp").text(result.main.temp + String.fromCharCode(176)+ "C");
+     $("#desc").text(result.weather[0].description);
       $("#wind").text(result.wind.speed);
       $("#img").attr('src', result.weather[0].icon);
+      let faren = Math.round(result.main.temp * 9/5 + 32);
+
+
+   $("#temp").click(function(){
+     $("#temp").hide();
+    $("#tempfaren").text(faren + String.fromCharCode(176)+ "F");
+  });
+
+ $("#tempfaren").click(function(){
+
+   $("#temp").show();
+   $("#tempfaren").text("");
+  });
+
 
     }
     })
   }
-  $("#temp").click(function(){
-    "#tempfaren".hide();
-  });
+
 });
